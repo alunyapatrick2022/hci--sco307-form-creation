@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>
+<body>
+    <section class="form-container">
+        <div class="container">
+            <div class="container-header">
+                <h2>Register Units</h2>
+            </div>
+            <form action="submit_registration.php" method="POST">
+                <div class="reg-number">
+                    <label for="reg_number">Reg. No.:</label>
+                    <input type="text" id="reg_number" name="reg_number" required>
+                </div>
+    
+                <div class="year-of-study-and-semester">
+                    <div class="year-of-study">
+                        <fieldset>
+                            <legend>Year of Study:</legend>
+                            <input type="radio" id="year-of-study" name="year-of-study" value="Year One"/>Year One <br/>
+                            <input type="radio" id="year-of-study" name="year-of-study" value="Year One"/>Year Two<br/>
+                            <input type="radio" id="year-of-study" name="year-of-study" value="Year One"/>Year Three<br/>
+                            <input type="radio" id="year-of-study" name="year-of-study" value="Year One"/>Year Four<br/>
+                            <input type="radio" id="year-of-study" name="year-of-study" value="Year One"/>Year Five
+                        </fieldset>
+                    </div>
+        
+                    <div class="semester">
+                        <fieldset>
+                            <legend>Semester</legend>
+                            <input type="radio" id="semester" name="semester" required="true"/> Semester One<br/>
+                            <input type="radio" id="semester" name="semester" required="true"/> Semester Two
+                        </fieldset>
+                    </div>
+                </div>
+    
+                <div class="course">
+                    <label for="course">Course:</label>
+                    <input type="text" id="course" name="course" placeholder="e.g BSc. Mathematics and Computer Science" required="true">
+                </div>
+    
+                <div class="units">
+                    <fieldset>
+                        <legend>Units:</legend>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SCO300</span>         Computer Networks <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SCO307</span>         Human Computer Interface <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SMA391</span>         Object Oriented Programming <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SMA300</span>         Real Analysis <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SMA330</span>         Numerical Analysis <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SMA335</span>         Ordinary Differencial Equations <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SMA332</span>         Methods Of Applied Mathematics <br/>
+                        <input type="checkbox" name="computer-networks" id="unit1"/><span>SCO207</span>         Web Development Technologies 
+                    </fieldset>
+                </div>
+    
+                <div class="buttons">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
